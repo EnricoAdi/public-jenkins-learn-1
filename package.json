@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "main": "app.js",
   "scripts": {
-    "dev": "node app.js"
+    "dev": "node app.js dev",
+    "prod": "node app.js prod",
+    "qa": "node app.js qa"
   },
   "keywords": [],
   "author": "",
