@@ -7,4 +7,18 @@ pipeline {
       }
     } 
   }
+  post{
+    always {
+      echo 'I will always say hello'
+    }
+    succcess {
+      echo 'I will only say hello on success'
+    }
+    failure {
+      echo 'I will only say hello on failure'
+    }
+    cleanup {
+      echo 'Dont care success or error'
+    }
+  }
 }
