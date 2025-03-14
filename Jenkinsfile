@@ -9,6 +9,7 @@ pipeline {
     stage('Test') {
       steps {
         echo ('Hello test begin')
+        sh('error')
       }
     } 
     stage('Deploy') {
