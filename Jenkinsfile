@@ -3,18 +3,23 @@ pipeline {
   stages {
     stage('Build') {
       steps {
-        echo ('Hello build!')
+        echo ('Hello build 1')
+        echo ('Hello build 2!')
+        echo ('Hello build 3!')
       }
     } 
     stage('Test') {
       steps {
-        // echo ('Hello test begin')
-        sh('error')
+        echo ('Hello test begin 1')
+        echo ('Hello test begin 2')
+        echo ('Hello test begin 3') 
       }
     } 
     stage('Deploy') {
       steps {
-        echo ('Hello Deployed!')
+        echo ('Hello Deployed 1!')
+        echo ('Hello Deployed 2!')
+        echo ('Hello Deployed 3!')
       }
     } 
   }
