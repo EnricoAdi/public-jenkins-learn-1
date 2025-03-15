@@ -1,22 +1,23 @@
 @Library("jenkins-learn-shared-library@main")_
-
+import greetings.message.Hello;
 pipeline {
   agent any
   stages {
-    stage('Build') {
+    stage('Build with vars') {
       steps {
-        echo ('Hello build 1')
-        echo ('Hello build 2!')
+        echo ('Hello build 1') 
         sleep(1)
         script{
           hello.hello("enrico")
         }
       }
     } 
-    stage('Test') {
+    stage('Test with src class') {
       steps {
         echo ('Hello test begin 1')
-        echo ('Hello test begin 2')
+        script{
+          Hello.message('enrico')
+        }
       }
     } 
     stage('Deploy') {
