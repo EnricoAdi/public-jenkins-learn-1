@@ -5,6 +5,7 @@ pipeline {
       steps {
         echo ('Hello build 1')
         echo ('Hello build 2!')
+        sleep(5)
         echo ('Hello build 3!')
       }
     } 
@@ -12,6 +13,7 @@ pipeline {
       steps {
         echo ('Hello test begin 1')
         echo ('Hello test begin 2')
+        sleep(5)
         echo ('Hello test begin 3') 
       }
     } 
@@ -19,6 +21,7 @@ pipeline {
       steps {
         echo ('Hello Deployed 1!')
         echo ('Hello Deployed 2!')
+        sleep(5)
         echo ('Hello Deployed 3!')
       }
     } 
