@@ -16,7 +16,7 @@ pipeline {
       steps {
         echo ('Hello test begin 1')
         script{
-          Hello.message('enrico')
+          Hello.Message('enrico')
         }
       }
     } 
