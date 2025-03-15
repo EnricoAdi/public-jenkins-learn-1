@@ -9,9 +9,9 @@ pipeline {
         sleep(1)
         script{
           hello.hello("enrico")
+          sh "npm install"
+          sh "./pre.sh"
         }
-        sh "npm install"
-        sh "./pre.sh"
       }
     } 
     stage('Test with src class') {
