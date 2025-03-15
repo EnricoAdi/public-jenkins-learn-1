@@ -8,9 +8,9 @@ pipeline {
         echo ('Hello build 1') 
         sleep(1)
         script{
-          hello.hello("enrico")
-          sh "npm install"
-          sh "./pre.sh"
+          hello.hello('enrico')
+          sh 'npm install'
+          // sh './pre.sh'
         }
       }
     } 
